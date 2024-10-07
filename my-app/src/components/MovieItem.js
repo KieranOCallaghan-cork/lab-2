@@ -12,6 +12,8 @@ function MovieItem(props) {
       <Card>
         <Card.Header>{props.myMovie.Title}</Card.Header>
         <Card.Body>
+            {/**above is the bones of the card that will make the whole page looking nice */}
+            {/** Whilst down below is where the main data will be taken and displayed out */}
           <blockquote className="blockquote mb-0">
             <img src={props.myMovie.Poster} alt={props.myMovie.Title} />
             <footer>{props.myMovie.Year}</footer>
