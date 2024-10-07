@@ -29,6 +29,7 @@ const Read = ()=> {
     return(
         <div>
             <h1> This is my Comp</h1>
+            <Movies myMovies={Data} />
         </div>
     );
     }

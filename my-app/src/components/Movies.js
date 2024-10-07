@@ -1,11 +1,13 @@
+import MovieItem from "./MovieItem";
 // this is a new componat 
-const Movies = ()=> {
+const Movies = (props)=> {
     // this is where i want to display my movie
-    return(
-        <div>
-            <h1> This is my Comp</h1>
-        </div>
-    );
+    return props.myMovies.map(
+        (movie)=>{
+            return <MovieItem myMovie={movie}></MovieItem>
+        }
+
+    )
 }
 
 export default Movies;
