@@ -1,5 +1,6 @@
+// imported react 
 import React from 'react';
-
+// this is to display my output with the time 
 const Content = () => {
   return (
     <div>
@@ -8,5 +9,5 @@ const Content = () => {
     </div>
   );
 }
-
+// put the contnet out 
 export default Content;
