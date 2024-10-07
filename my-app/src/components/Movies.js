@@ -5,7 +5,7 @@ const Movies = (props)=> {
     // this is where i want to display my movie and the code by the return is where it has goten the information to be able to do that
     return props.myMovies.map(
         (movie)=>{
-            return <MovieItem myMovie={movie}></MovieItem>
+            return <MovieItem myMovie={movie} key={movie.imdbID}></MovieItem>
         }
 
     )

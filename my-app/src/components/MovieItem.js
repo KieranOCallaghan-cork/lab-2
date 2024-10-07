@@ -4,17 +4,17 @@ import Card from 'react-bootstrap/Card';
 
 function MovieItem(props) {
   useEffect(() => {
-    console.log("Movie Item:", props.mymovie);
-  }, [props.mymovie]); // Only run this effect when the mymovie prop changes
+    console.log("Movie Item:", props.myMovie);
+  }, [props.myMovie]); // Only run this effect when the mymovie prop changes
  // this is where it displays the output and that it has goten from the comp movie, as it has the data there
   return (
     <div>
       <Card>
-        <Card.Header>{props.mymovie.Title}</Card.Header>
+        <Card.Header>{props.myMovie.Title}</Card.Header>
         <Card.Body>
           <blockquote className="blockquote mb-0">
-            <img src={props.mymovie.Poster} alt={props.mymovie.Title} />
-            <footer>{props.mymovie.Year}</footer>
+            <img src={props.myMovie.Poster} alt={props.myMovie.Title} />
+            <footer>{props.myMovie.Year}</footer>
           </blockquote>
         </Card.Body>
       </Card>
