@@ -5,6 +5,8 @@ import NavigationBar from './components/NavigationBar';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Content from './components/Content';
+import Read from './components/read';
+import Create from './components/Create';
 // main part of the app 
 function App() {
   //this is where the conent is displayed 
