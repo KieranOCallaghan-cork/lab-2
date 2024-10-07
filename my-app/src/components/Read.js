@@ -1,4 +1,5 @@
 // this is a new componat 
+import Movies from "./Movies";
 const Read = ()=> {
     return(
         <div>
