@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import Content from './components/Content';
 import Read from './components/read';
 import Create from './components/Create';
+import Movies from './components/Movies';
 // main part of the app 
 function App() {
   //this is where the conent is displayed 
