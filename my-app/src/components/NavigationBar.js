@@ -1,7 +1,7 @@
 //imported the nav bar from bootstarp
 import { Navbar, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-//made the nav bar content 
+//made the nav bar content made 
 const NavigationBar = () => {
   return (
     <Navbar bg="light" expand="lg">
