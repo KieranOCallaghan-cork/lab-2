@@ -1,11 +1,62 @@
-// this is a new componat that will allow it to be craeted
-const Create = ()=> {
-    // this is for the return of the output that i want to be able to create
-    return(
-        <div>
-            <h1> This is my Comp</h1>
+// create.js
+
+import { useState } from "react";
+
+function Create() {
+  const [title, setTitle] = useState('');
+  const[year, setYear] = useState('');
+  const[poster, setPoster] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(title);
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log(year);
+
+        const handleSubmit = (e) => {
+            e.preventDefault();
+            console.log(poster);
+  }
+
+  return (
+    <div>
+      <h2>This is my Create Component.</h2>
+      <form onSubmit={handleSubmit}>
+        <div className="form-group">
+          <label>Add Movie Title: </label>
+          <input type="text"
+            className="form-control"
+            value={title}
+            onChange={(e) => { setTitle(e.target.value) }}
+          />
+          
         </div>
-    );
+        <div>
+            <label>Add Movie Year: </label>
+          <input type="text"
+            className="form-control"
+            value={year}
+            onChange={(e) => { setYear(e.target.value) }}
+          />
+
+        </div>
+        <div>  
+         <label>Add Movie Poster: </label>
+          <input type="text"
+            className="form-control"
+            value={poster}
+            onChange={(e) => { setPoster(e.target.value) }}
+          />
+          
+          </div>
+
+
+        <input type="submit" value="Add Movie" />
+      </form>
+    </div>
+  );
 }
-// this is where i will export the output
+
 export default Create;

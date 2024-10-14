@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import Movies from "./Movies";
 import axios from "axios";
-import { mockComponent } from "react-dom/test-utils";
 
 const Read = ()=> {
 // below is the storage from the 3 films that have been added to the table 
@@ -19,7 +18,9 @@ const Read = ()=> {
                     console.log(responce.data,movies);
                     setMovies(responce.data.movies);
               })
-              .catch(()=>{})
+              .catch((error)=>{
+                console.log(error);
+              })
         }
       );
 
