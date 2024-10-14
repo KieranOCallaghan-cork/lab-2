@@ -1,16 +1,25 @@
 // this is a new componat after it has been imported the content from the movies
 // the comp read is going to be able to call apon the data that is stored by using the const Data 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Movies from "./Movies";
 import axios from "axios";
+import { mockComponent } from "react-dom/test-utils";
+
 const Read = ()=> {
 // below is the storage from the 3 films that have been added to the table 
     const Data = 
-        [ ]
+        [ ];
+
+        const [movies, setMovies] = useState([]);
 
       useEffect(
         ()=>{
-
+              axios.get('https://jsonblob.com/api/jsonblob/1287718524221775872')
+              .then((responce)=>{
+                    console.log(responce.data,movies);
+                    setMovies(responce.data.movies);
+              })
+              .catch(()=>{})
         }
       );
 
