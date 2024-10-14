@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import Card from 'react-bootstrap/Card';
 
 function MovieItem(props) {
+  //this is the new way to use the blobs
   useEffect(() => {
     console.log("Movie Item:", props.myMovie);
   }, [props.myMovie]); // Only run this effect when the mymovie prop changes
